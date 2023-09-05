@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Agrandir-Regular";
+  src: url("/fonts/Agrandir-Regular.woff2") format("woff2"),
+    url("/fonts/Agrandir-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: "Agrandir-Grand";
+  src: url("/fonts/Agrandir-Grand.woff2") format("woff2"),
+    url("/fonts/Agrandir-Grand.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
