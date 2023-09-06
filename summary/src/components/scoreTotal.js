@@ -6,13 +6,13 @@ const scoreTotal = () => {
       borderTopRadius={[null, null, null, "3xl"]}
       borderBottomRadius="3xl"
       textAlign="center"
-      p="5"
+      p={[null, null, null, "5"]}
       color="white"
       w={[null, null, null, "400px"]}
-      h={["300px", null, null, "500px"]}
+      h={["290px", null, null, "500px"]}
       bgGradient="linear(hsl(252, 100%, 67%), hsl(241, 81%, 54%))"
     >
-      <Center mt="5">
+      <Center mt="3">
         <Text fontSize="17"> Your Result</Text>
       </Center>
       <Flex
@@ -34,13 +34,15 @@ const scoreTotal = () => {
           of 100
         </Text>
       </Flex>
-      <Box mt="5" textAlign="center">
+      <Box mt="4" textAlign="center">
         <Text fontSize={[null, null, null, "30"]} as="b">
           Great
         </Text>
         <Text mt="1" px="12" fontSize={["small", null, null, "md"]}>
           {" "}
-          You scored higher than 65% of the people who have taken these tests.
+          {
+            "You scored higher than 65% of the\n people who have taken these tests."
+          }
         </Text>
       </Box>
     </Box>

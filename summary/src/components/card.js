@@ -3,20 +3,24 @@ import reaction from "../assets/images/icon-reaction.svg";
 
 const CardInfo = ({ category, score, icon, color }) => {
   return (
-    <Box h={["70px", null, null, "75px"]} mt={[null, null, null, "15px"]}>
+    <Box h={["60px", null, null, "75px"]}>
       <Flex
         alignItems="center"
-        w="72"
-        h="12"
+        w={["20rem", null, null, "21rem"]}
+        h={["9", null, null, "12"]}
         textAlign="center"
         justifyContent="space-between"
         bgColor={color.bgColor}
-        borderRadius="3xl"
-        p="2.5"
+        borderRadius="1xl"
+        px="2.5"
       >
         <Flex gap="2">
           <Image bgColor={color.bgColor} src={icon.src} />{" "}
-          <Text as="b" textColor={color.textColor}>
+          <Text
+            fontSize={["13", null, null, null]}
+            as="b"
+            textColor={color.textColor}
+          >
             {category}{" "}
           </Text>
         </Flex>

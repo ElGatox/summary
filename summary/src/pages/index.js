@@ -2,6 +2,7 @@ import { Stack, Flex } from "@chakra-ui/react";
 import Summary from "@/components/summary";
 import data from "../data/data.json";
 import ScoreTotal from "@/components/scoreTotal";
+import { info } from "@/data/info";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
         justifyContent="center"
       >
         <ScoreTotal />
-        <Summary />
+        <Summary info={info} />
       </Stack>
     </Flex>
   );

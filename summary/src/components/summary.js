@@ -1,9 +1,8 @@
 import React from "react";
 import Card from "@/components/card";
 import { Box, Text, Flex, Button } from "@chakra-ui/react";
-import { info } from "@/data/info";
 
-const summary = () => {
+const Summary = ({ info }) => {
   return (
     <Flex
       flexDirection={["column", null, null, "column"]}
@@ -14,23 +13,40 @@ const summary = () => {
       boxShadow={[null, null, null, "lg"]}
       justifyContent="center"
       alignItems="center"
+      gap={["", null, null, "2"]}
     >
-      <Text fontSize="17">Summary</Text>
-      {info.map((card, i) => (
-        <Box key={i}>
-          <Card
-            icon={card.icon}
-            category={card.category}
-            score={card.score}
-            color={card.color}
-          />
-        </Box>
-      ))}
-      <Button borderRadius="2xl" h="12" w="72" colorScheme="blue" size="sm">
+      <Text mt="3" mb="3" w="20rem" textAlign="start" fontSize="15" as="b">
+        Summary
+      </Text>
+      <Box mt={[null, null, null, "5"]}>
+        {info.map((card, i) => (
+          <Box key={i}>
+            <Card
+              icon={card.icon}
+              category={card.category}
+              score={card.score}
+              color={card.color}
+            />
+          </Box>
+        ))}
+      </Box>
+      <Button
+        borderRadius="2xl"
+        h={["12", null, null, "14"]}
+        w={["20rem", null, null, "21rem"]}
+        _hover={{
+          border: "1px solid ",
+          background: "white",
+          color: "blue.900",
+        }}
+        color="white"
+        bg="blue.900"
+        size="sm"
+      >
         Continue
       </Button>
     </Flex>
   );
 };
 
-export default summary;
+export default Summary;
