@@ -5,7 +5,6 @@ const scoreTotal = () => {
     <Box
       borderTopRadius={[null, null, null, "3xl"]}
       borderBottomRadius="3xl"
-      borderColor="red"
       textAlign="center"
       p="5"
       color="white"
@@ -13,8 +12,8 @@ const scoreTotal = () => {
       h={["300px", null, null, "500px"]}
       bgGradient="linear(hsl(252, 100%, 67%), hsl(241, 81%, 54%))"
     >
-      <Center>
-        <Text> Your Result</Text>
+      <Center mt="5">
+        <Text fontSize="17"> Your Result</Text>
       </Center>
       <Flex
         flexDirection="column"
@@ -24,7 +23,7 @@ const scoreTotal = () => {
         w={["120px", null, null, "200px"]}
         h={["120px", null, null, "200px"]}
         borderRadius="full"
-        mt={["5", null, null, "20"]}
+        mt={["5", null, null, "10"]}
         textAlign="center"
         bgGradient="linear(hsl(241, 75%, 60%), hsl(252, 100%, 61%) )"
       >
@@ -39,7 +38,7 @@ const scoreTotal = () => {
         <Text fontSize={[null, null, null, "30"]} as="b">
           Great
         </Text>
-        <Text mt="1" px="12" fontSize="small">
+        <Text mt="1" px="12" fontSize={["small", null, null, "md"]}>
           {" "}
           You scored higher than 65% of the people who have taken these tests.
         </Text>

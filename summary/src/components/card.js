@@ -2,7 +2,6 @@ import { Box, Flex, Text, Image } from "@chakra-ui/react";
 import reaction from "../assets/images/icon-reaction.svg";
 
 const CardInfo = ({ category, score, icon, color }) => {
-  console.log(icon);
   return (
     <Box h={["70px", null, null, "75px"]} mt={[null, null, null, "15px"]}>
       <Flex
