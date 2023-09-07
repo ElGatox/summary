@@ -1,5 +1,4 @@
 import { Box, Flex, Text, Image } from "@chakra-ui/react";
-import reaction from "../assets/images/icon-reaction.svg";
 
 const CardInfo = ({ category, score, icon, color }) => {
   return (
@@ -17,7 +16,7 @@ const CardInfo = ({ category, score, icon, color }) => {
         <Flex gap="2">
           <Image bgColor={color.bgColor} src={icon.src} />{" "}
           <Text
-            fontSize={["13", null, null, null]}
+            fontSize={["15", null, null, null]}
             as="b"
             textColor={color.textColor}
           >

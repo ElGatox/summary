@@ -6,7 +6,7 @@ const colors = {
   dgreen: "green.300",
   dred: "red.300",
   dyellow: "yellow.300",
-  dblue: "blue.300",
+  dblue: "blue.600",
 };
 
 export { colors };

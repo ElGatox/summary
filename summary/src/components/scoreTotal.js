@@ -12,7 +12,7 @@ const scoreTotal = () => {
       h={["290px", null, null, "500px"]}
       bgGradient="linear(hsl(252, 100%, 67%), hsl(241, 81%, 54%))"
     >
-      <Center mt="3">
+      <Center mt={["3", null, null, "5"]}>
         <Text fontSize="17"> Your Result</Text>
       </Center>
       <Flex
@@ -34,11 +34,15 @@ const scoreTotal = () => {
           of 100
         </Text>
       </Flex>
-      <Box mt="4" textAlign="center">
+      <Box mt={["4", null, null, "8"]} textAlign="center">
         <Text fontSize={[null, null, null, "30"]} as="b">
           Great
         </Text>
-        <Text mt="1" px="12" fontSize={["small", null, null, "md"]}>
+        <Text
+          mt={["2", null, null, "4"]}
+          px={["12", null, null, "20"]}
+          fontSize={["small", null, null, "md"]}
+        >
           {" "}
           {
             "You scored higher than 65% of the\n people who have taken these tests."

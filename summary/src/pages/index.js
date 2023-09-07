@@ -8,6 +8,7 @@ export default function Home() {
   return (
     <Flex height="100vh" alignItems="center" className="home">
       <Stack
+        spacing="-28px"
         flexDirection={["column", null, "row"]}
         w={[null, null, null, "full"]}
         justifyContent="center"
